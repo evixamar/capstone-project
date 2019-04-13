@@ -3,10 +3,110 @@
 }
 
 html {
-  height: 100%;
+  height: 150%;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+}
+
+/* header */
+
+header {
+  /* starts flex */
+  display: flex;
+
+  /* determines direction */
+  /* flex-direction: ; */
+
+  /* alignment type  */
+  justify-content: space-evenly;
+  /* align-items: ; */
+
+  /* align type single item */
+  /* align-self: ; */
+
+  /* wrap option */
+  /* flex-wrap: ; */
+
+  /* width: vw; */
+  background-image: linear-gradient(#8f8f8f, #2e2d2d);
+
+  text-align: center;
+}
+
+.horizontal-stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropDownCell {
+  background-image: linear-gradient(#777777, #777777);
+  padding: 5px;
+  margin: 1px;
+  text-align: center;
+
+  box-shadow: 0 0 5px black;
+  margin: 0 10px 0 10px;
+}
+.white {
+  cursor: pointer;
+  color: #ffffff;
+}
+.white:hover {
+  text-shadow: 0 0 5px white;
+}
+
+/* header */
+
+/* home page start */
+
+.bg-image {
+  background-image: url('./asset/nfl.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image1 {
+  background-image: url('./asset/zeke.png');
+  width: 50px;
+  height: 100px;
+
+  /* background-color: red; */
+}
+.image-2 {
+  width: 200px;
+  height: 200px;
+}
+.image-3 {
+  width: 200px;
+  height: 200px;
+}
+.image-4 {
+  width: 200px;
+  height: 200px;
+}
+.image-5 {
+  width: 200px;
+  height: 200px;
+}
+.image-6 {
+  width: 200px;
+  height: 200px;
+}
+.image-7 {
+  width: 200px;
+  height: 200px;
+}
+/* .playerContainer { */
+/* } */
+/* home page end */
+.playerContainer {
+  color: white;
 }
