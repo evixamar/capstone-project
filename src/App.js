@@ -3,22 +3,23 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Header from './pages/Header'
-import HeaderDropDown from './pages/HeaderDropDown'
-import PlayersPage from './pages/PlayersPage'
+import Players from './pages/Players'
 import Homepage from './pages/Homepage'
-
+import About from './pages/About'
 
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/header" component={Header} />
-          <Route exact path="/headerDropDown" component={headerDropDown} />
-          <Route exact path="/homepage" component={Homepage} />
-        </Switch>
+        <Header className="playerContainer" />
+        <div className="bg-image">
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/players/:year" component={Players} />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </div>
       </Router>
     )
-    }
   }
+}

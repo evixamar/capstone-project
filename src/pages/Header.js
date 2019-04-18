@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderDropDown from './HeaderDropDown'
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
   constructor(props) {
@@ -35,7 +36,9 @@ class Header extends Component {
             Draft Year
           </h5>
 
-          <h5 className="headerOption white">About</h5>
+          <Link to="/about">
+            <h5 className="headerOption white">About</h5>
+          </Link>
         </header>
         {this.state.showMenu2 ? (
           <div>
